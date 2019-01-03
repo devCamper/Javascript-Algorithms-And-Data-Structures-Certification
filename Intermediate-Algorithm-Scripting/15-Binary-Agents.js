@@ -7,9 +7,7 @@ function binaryAgent(str) {
   for(let i = 0; i < binaryArr.length; i++) {
     let binaryCode = binaryArr[i];
     let decimalCode = parseInt(binaryCode, 2)
-    //console.log(decimalCode)
     let letter = asciiChars[decimalCode-offset]
-    //console.log(letter)
     charArray.push(letter)
   }
   return charArray.join("");
